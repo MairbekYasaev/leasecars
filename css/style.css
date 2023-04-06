@@ -482,9 +482,14 @@ body {
 }
 
 .tabs__content-item {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(4, 1fr);
     gap: 100px 40px;
+    margin-bottom: 100px;
+}
+
+.tabs__content-item--active {
+    display: grid;
 }
 
 .card {
@@ -498,6 +503,12 @@ body {
     border-top: 0;
 }
 
+
+
+.card-img {
+    display: block;
+}
+
 .card__title {
     padding-top: 20px;
     font-size: 24px;
@@ -506,15 +517,25 @@ body {
    
 }
 
-.card__price {
-    
-}
-
-.card__link {
-
+.card-price {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 24px;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+.card__link {
+    display: block;
+    color: #0066FF;
+    border: 1px solid #0066FF;
+    border-top: 0;
+}
+
+.showmore-link__newcar {
+    margin-top: 0;
+   
 }
 
 
