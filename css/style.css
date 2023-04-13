@@ -557,6 +557,10 @@ body {
     width: 100%;
 }
 
+.card-img {
+    width: 100%;
+}
+
 /*--------------- ADAPTATION -----------------*/
 
 @media (max-width:1180px){
@@ -566,6 +570,14 @@ body {
 
      .important__item-img {
         width: 100%;
+     }
+
+     .tabs__content-item {
+        grid-template-columns: repeat(3, 1fr);
+     }
+     .tabs__btn {
+        gap: 0;
+        padding: 0 0 50px 0;
      }
 }
 
@@ -685,6 +697,11 @@ body {
         padding-bottom: 50px;
     }
 
+    .header-inner {
+        padding: 40px 20px 45px 20px;
+        align-items: center;
+    }
+
     .video__content {
         height: 200px;
     }
@@ -705,7 +722,22 @@ body {
         height: 50px;
         font-size: 32px;
     }
+    .video {
+        padding-bottom: 50px;
+    }
 
+    .important__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .app, .copy__nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copy__nav-list {
+        gap: 20px;
+    }
 }
 
 
